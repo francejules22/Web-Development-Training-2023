@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="This is an example of variables">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>Javascript</title>
+   </head>
+  <body>
+
+  </body>
+
+  <script>
+
+
+
+//using push - add to end and pop - remove from end
+let friends = ["Michael", "Paolo", "Mark"];
+friends.push("Travis");
+friends.pop();
+
+//using pop
+    var items = ["Bottle", 4 , true];
+    items.pop();
+    console.log(items);
+
+//using push
+    var items = ["Bottle", 4 , true];
+    items.push("Juice");
+    console.log(items);
+
+//Shift - remove from start and Unshift - add to start
+let friends = ["Michael", "Paolo", "Mark"];
+friends.unshift("Travis");
+friends.shift();
+
+//using concat - merge arrays
+let friends1 = ["Asta", "Yuno", "Luck"];
+let friends2 = ["Jose", "Noel"];
+let friends = friends1.concat(friends2);
+
+
+//using for of
+const students = ["Student1","Student2","Student3","Student4","Student5"];
+//for loop
+for (let i = 0; i < students.length; i++){
+  console.log(`For ${students[i]}`);
+} 
+//while loop
+let num = 0;
+while( num < 5){
+  console.log(`While ${students[num]}`);
+  num++;
+}
+//for of
+for (let stud of students){
+  console.log(stud);
+}
+//end of using for of
+
+
+//Iterating over objects using for in
+const studentsExam = {
+  student1: 99,
+  student2: 98,
+  student3: 97,
+  student4: 96,
+  student5: 95,
+};
+for (let student in studentsExam){
+  console.log(`${student} got ${studentsExam[student]}`)
+}
+
+
+//Using This Keyword
+const student = {
+  firstName : "Francis Jules",
+  lastName: "Espartero",
+  fullName(){
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+student.fullName();
+student.lastName = "Lemos";
+student.fullName();
+
+//Using Return Keyword
+function add(x,y){
+  return x + y;
+}
+add(3,2);
+
+//To loop over an array , start at index[0] and continue looping to until last index(length- 1)
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+for( let i = 0; i <= days.length; i++){
+  console.log(i, days[i]);
+}
+
+//Reverse
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+for( let i = days.length - 1 ; i >= 0; i--){
+  console.log(days[i].toUpperCase());
+}
+
+//Using Try and Catch
+try{
+  hello.toUpperCase();
+} catch {
+  console.log("Error");
+}
+
+//another try and catch sample
+function student (name){
+  try{
+    console.log(name.toUpperCase());
+  } catch (e) {
+    console.log(e);
+    alert("Invalid Input!");
+  }
+}
+
+
+  </script>
+
+  </html>

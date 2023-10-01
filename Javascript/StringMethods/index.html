@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+//using Uppercase
+ //Sample1
+  var item = "Bottle of Water";
+  console.log(item.toUpperCase());
+ //Sample2
+  var greeting = "I love PytHON";
+  console.log(greeting.toUpperCase());
+
+//Using lowercase
+ //Sample1
+var name = "FrAnCe JULEs";
+console.log(name.toLowerCase());
+ //Sample2
+ var str = "HELLO pHILIppiNES";
+ console.log(str.toLowerCase());
+
+
+ // Using trim  -  will trim all the white space at the beginning and at the end of the string
+  //Sample1
+  let message1 = "Hello    Word";
+  console.log(message1.trim());
+  //Sample2 
+  let greeeting = "Merry Christmas";
+  console.log(greeting.trim());
+ 
+//Using chaining methods - combining methods
+  //Sample1
+  let message2 = "Happy nEW yEAr";
+  console.log(message2.trim().toUpperCase()); 
+ //Sample2
+  let message3 = "haPPY vALENtINES dAY";
+  console.log(message3.trim().toLowerCase());
+
+// Using indexof() -The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present
+//Sample1
+let tvShow = "catdog";
+tvShow.indexOf("cat");
+tvShow.indexOf("dog");
+tvShow.indexOf("z"); // -1 because there’s no z in it
+//Sample2
+let names = ["france","mike","Yuno","asta","midoriya"];
+console.log(names.indexOf["france"]); //0
+console.log(names.indexOf["mike"]); //1
+console.log(names.indexOf["asta"]); //3
+
+//Using slice(startOfIndex, endOfIndex) - method extracts a section of a string and returns it as a new string, without modifying the original string. can accept more than 1 argument. 
+//Sample1
+let name = "Francis Jules Espartero";
+name.slice(0, 6);//Francis
+//Sample2
+let greeting = "Happy Birthday to you";
+console.log(greeting.slice(0,8)); //Happy Bir
+//Sample3
+let text = "I lovE PYThon and Javascript";
+console.log(text.slice(0,9)); //I lovE PYT
+
+
+//Using string.replace(searchvalue, newvalue)  - method returns a new string with some or all matches of a pattern replaced by a replacement.
+//Sample1
+let name = ("France","student");
+console.log(name.replace("France","Jules"));  // Jules student
+//Sample2
+let message = "Hello Word";
+let newMessage = message.replace("Word","Philippines");
+console.log(newMessage);
+
+//Using Template Literals -are strings that allow embedded expressions, which will be evaluated and then turned into a string. 
+//Sample1
+let item = "Macbook";
+let price = 50000;
+let qty = 2;
+"My bestfriend bought " + qty + " " + item + ". Total amount is " + qty*price
+
+//Sample2
+let item = "Tshirt";
+let price = 999;
+let store = "Penshoppe Store";
+let quantity = 5; 
+console.log("I bought" + quantity + " " + item + "in the" + store + "Total Amount is cost " + quantity*price + "pesos.");
+//or we can use back tip not a single qoutes
+console.log(`I bought ${quantity} ${item} int the ${store}.Total amount is cos ${quantity*price} pesos.`);
+    </script>
+</body>
+</html>
