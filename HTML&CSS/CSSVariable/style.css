@@ -1,0 +1,19 @@
+:root{
+  --text-color: #ddd;
+  
+}
+.section-one p{
+  color: var(--text-color);
+
+}
+.section-two p{
+  color: var(--text-color);
+}
+
+/*.section-one{
+--test: 10px;
+
+}
+.text-box{
+  --test: 20px;
+}
