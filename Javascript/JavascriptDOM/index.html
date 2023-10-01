@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Javascript DOM</title>
+</head>
+<body>
+    <!--STEP 1: SELECTION -->
+      <!--Using getElementByID-->
+      <div id="test">
+            <p>Thank you for watching!</p>
+            <button id="button">Subscribe</button>
+      </div>
+
+      <div id ="banner">
+          <img src="images/myimg.jpg" alt ="img"/>
+      </div>
+      
+       <!--Using getElementByTagName-->
+     <div id ="banner">
+         <img src="images/myimg.jpg" alt ="img"/>
+        <p>Click my image</p>
+        <p>Slides my image</p>
+     </div>
+
+       <!--Using getElementByClassName-->
+       <div class="icons">
+           <h1>Choose Icons</h1>
+           <img src="images/img.png"/>
+       </div>
+
+       
+       <!--Using querySelector-->
+       <div id="select">
+           <p>Choose your desire selection</p>
+       </div>
+
+       <!--Using querySelectorAll-->
+       <div class="icons">
+           <p>Click the icon below</p>
+           <p>Click the icon above</p>
+           <p>Click the icon in the left</p>
+           <p>Click the icon in the right</p>
+           <p>Click the icon in the center</p>
+       </div>
+        <!--END OF STEP 1: SELECTION -->
+
+
+          
+        <!--STEP 2: MANIPULATION-->
+               <!--innerHTML-->
+                     <font color="green">
+                       <h1>Changing paragraph content based on Id property</h>
+                    </font>
+                   <p id="id1">Developed an Enterprise Content Management online application by using Spring MVC as Back end and JSP, HTML, CSS, JavaScript and Angular JS as Front end.</p> 
+                   <p id="id2">Create a user with user type and admin type, where admin can allow to perform administration actions like modify user type and delete the users.</p>
+   
+
+              <!--textContent-->
+                 <div id="text">This is <span>some</span> text!</div>
+              
+              <!--innerText-->
+              <p>Click the button get the text content of the button element.</p>
+               <button onclick="myFunction()" id="myBtn">Try it</button>
+               <p><strong>Note:</strong> The innerText property is not supported in Internet Explorer 9 and earlier.</p>
+                <p id="demo"></p>
+
+
+              <!--The Difference between innerHTML and textContent-->
+                 <div id="my-div"> </div>
+                 <p id="para"></p>
+
+        <!--END OF STEP 2: MANIPULATION-->
+
+
+
+        <!--PROPERTIES AND METHODS-->
+                    <!--getAttribute-->
+                    <button id="myBtn" onclick="myButton()">click me</button>
+                    <p id="demo"></p>
+
+                     <!--setAttribute-->
+                            <!--sample1-->
+                     <a id = "link"> javaTpoint.com </a>
+                     <button onclick = "fun()"> Add attribute </button>
+                            <!--sample2-->
+                    <input id = "change"  type = "text" value = "javascript"/>
+                    <button onclick = "changeButton()"> Change </button>
+
+
+                     <!--classList-->
+                         <!--adding and removing classList-->
+                     <h3> Click on the button and add the class</h3> </br>  
+                     <input type="button" id="Btn" value="Click me" class="Class1" onclick="getClass();"> 
+                         <!--classList.toggle()-->
+                     <h3> Click on the button to add or remove the class</h3> </br>  
+                     <input type="button" id="Btn" value="Click me" class="class1 myClass1" onclick="get_toggle();"> 
+                          <!--classList.toggle() sample-->
+                     <p>Click the "Try it" button to toggle between adding and removing the "mystyle" class name of the DIV element:</p>
+                     <button onclick="myFunction()">Try it</button>
+                     <div id="myDIV">
+                          This is a DIV element.
+                     </div>
+                          <!--classList.contains()-->
+                    <input type="button" id="Btn" value="Click to check" class="myClass" onclick="getClass();">
+                          <!--classList.replace()-->
+                    <input type="button" id="Btn" value="Click to replace" class="myClass1" onclick="replace_Class();">
+                          <!--classList.item()-->
+                    <input type="button" id="Btn" value="Click Me" class="myClass1 myClass2 myClass3 myClass4" onclick="get_Class();">
+                    
+                    
+                    <!--parentElement-->
+                    <div id="parent-element">
+                        <p>Thank you for subscribing</p>
+                        <button id="butt">Click Me</button>
+                    </div>
+
+                   <!--parentElement, children, nextSiblingElement and previousSiblingElement-->
+                    <div class="icon-banner">
+                        <h1>MyIcons</h1>
+                        <h1>Choose Icons</h1>
+                        <h2>Create your Icons</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt explicabo amet quas, doloremque vero ipsa quibusdam, dolor, fuga porro optio dolores? Tempora dignissimos culpa illum ea saepe expedita, exercitationem blanditiis.</p>
+                        <img src="images/img.png"/>
+                        <button>Click the icons</button>
+                    </div>
+
+                    <!--append-->
+                        <p>Hello</p>
+                        <h1 id="para">Hello</h1>
+                  
+
+         <!--END OF PROPERTIES AND METHODS-->
+
+ <script src="script.js"></script>
+</html>

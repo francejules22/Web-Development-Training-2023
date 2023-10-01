@@ -1,0 +1,37 @@
+jQuery - is a DOM manipulation library | https://jquery.com/  |JS Library
+library  - is a single file that someone else wrote.ith bunch of methods, properties inside of it and we will add it to our project
+Why would you use jQuery?
+- fixes " broken " DOM API
+- Brevity and clarity
+- ease of use
+- built-in cross-browser support
+- AJAX
+- Lots of people use jQuery
+
+Why would you not use jQuery?
+- the DOM API is no longer "broken"
+- it doesn't do anything you can't do on your own 
+- it is an unnecessary dependency
+- performance
+- lots of poeple are moving away from jQuery
+
+What is jQuery?
+It comes with a bunch of useful methods to things like:
+- select elements
+- manipulate elements
+- create elements
+- add event listeners
+- animate elements 
+- add effects
+- make HTTP requests (AJAX)
+
+Either way , its worth knowing .
+
+Adding jQuery
+Downloading jQuery and link to it locally
+
+Selecting with jQuery
+Objective:
+- select elements with $()
+- use .css() to style elements
+$("selectorGoesHere")
