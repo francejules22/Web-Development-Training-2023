@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="This is an example of variables">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>This is website</title>
+   </head>
+  <body>
+
+  </body>
+
+  <script>
+ 
+   // Conditions Statements
+var gender = "Male";
+var age = 26;
+
+ if (gender == "Male") {
+   if ( age >= 18 ){
+     console.log("You are a "+ gender +" and above the age limit!");
+   } else{
+     console.log("Sorry Dude!");
+   }
+ } else if( gender == "Female"){
+   if ( age >=18 ){
+    console.log("You are a "+ gender +" and above the age limit!");
+ } else {
+   console.log("Sorry Lady!");
+ }
+} else{
+  console.log("Can't figure out your gender!");
+ }
+ 
+ //if Statements - e IF statement is a decision-making statement that guides a program to make decisions based on specified criteria
+ //Sample1
+ if ( 1 + 2 === 3){
+   console.log("Equal");
+ }
+ //Sample2
+ var age = parseInt(prompt("Enter your age: "))
+ var message = "Im' not an adult!";
+if( age >= 20){
+  console.log(`I am a adult with the age of ${age} years old`);
+}
+else{
+  console.log(`${message} with the age of ${age} years old`);
+}
+
+
+
+ //Sample3
+var  bodyTemp = 36;
+if(bodyTemp > 37){
+  console.log("You have a fever and take medicine");
+}
+else{
+  console.log("Normal Body Temperature");
+}
+
+
+ //password must be 8+ characters
+ if ( pass.length >= 6){
+   alert ("Good password");
+ } else{
+   alert("Bad password");
+ }
+
+ //password cannot include space
+ if ( pass.indexOf(" ") == -1){
+   console.log("No Space");
+ } else{
+   console.log("Password should not have spaces");
+ }
+
+
+//else if statements
+let age = 18;
+if ( age <= 17){
+  console.log("You are no longer allowed to go out because you are a minor");
+} else if ( age >= 18){
+  console.log("You are allowed to go out");
+}
+
+//else statements
+let age = 18;
+if ( age <= 17){
+  console.log("You are no longer allowed to go out because you are a minor");
+} else if ( age >= 18){
+  console.log("You are allowed to go out");
+} else {
+  console.log("You are under home arrest because you are already senior");
+}
+
+//Nesting Conditions
+//Sample1
+const pass = prompt("Please enter a new password");
+if( pass.length >= 6) {
+  if ( pass.indexOf(" ") == -1){
+   console.log("Valid password");
+ } else{
+   console.log("Password should not have spaces");
+ }
+} else {
+  alert ("Invalid password");
+}
+
+//Logical And
+  //Sample1
+const pass = prompt("Enter your new password:");
+if(pass.length >= 8 && pass.indexOf(" ") == -1){
+  alert("Valid Password");
+} else {
+  alert("Invalid Password");
+}
+
+  //Sample2
+let username = "francejules22";
+let password = "12345";
+
+const user = prompt("Enter your username:");
+const pass = prompt("Enter your password:");
+if(username == user && password ==  pass){
+  alert("Credentials are correct");
+} else {
+  alert("Invalid Credentials");
+}
+
+//Sample3
+let myBirthYear = 2000;
+let myBirthDay = 22;
+let myBirthMonth = "December";
+
+const birthYear = parseInt(prompt("Enter your birth year: "));
+const birthDay = parseInt(prompt("Enter your birth day: "));
+const birthMonth = prompt("Enter your birth month: ");
+if(birthYear == myBirthYear && birthDay == myBirthDay && birthMonth == myBirthMonth){
+  console.log("Its my birthday!");
+}
+else{
+  console.log("You didn't guest my birthday then you can't attend!");
+}
+
+//Logical Not
+let terms = prompt("Do you agree to the terms and conditions?");
+if (!terms){
+  alert("You did not agree to the terms and conditions");
+} else {
+  alert("You agreed to the terms and conditions");
+}
+
+//Logical Or
+let age = prompt("What is your age");
+if( age <= 17 || age >= 65){
+  alert("You are not allowed to go out");
+} else {
+  alert("You may go out!");
+}
+
+//Boolean
+var subject = "ICT-118 Computer Architecture and Organization";
+var month = "November";
+var take_A_Quiz = true;
+if(take_A_Quiz){
+  console.log(`You already take a quiz in ${subject}`);
+}
+else{
+  console.log(`You need to take a quiz in ${subject} in the first week of ${month}`);
+}
+
+
+let username = "francejules";
+let password = 55555;
+const userName = prompt("Enter your usernam: ");
+const passWord = parseInt(prompt("Enter your password: "));
+if (username == userName && password == passWord){ 
+  alert("Your Credential is correct");
+ } 
+ else{
+    alert("Your Credential is Incorrect");
+  }
+
+  </script>
+
+  </html>

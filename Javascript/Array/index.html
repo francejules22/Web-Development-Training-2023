@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="This is an example of variables">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>Javascript</title>
+   </head>
+  <body>
+
+  </body>
+
+  <script>
+
+// Array
+ //Sample1
+ var items = ["Bottle", 4, true];
+ items[3] = "FRANCE";
+ console.log(items[3]); //FRANCE
+ //Sample2
+ var message = ["Thanks","Hello","Congrats"];
+ message[3] = "Goodbye";
+ console.log(message[3]); //Goodbye
+
+ //Another Example
+ const friend1 = "Michel";
+ const friend2 = "Jules";
+ const friend3 = "Mark";
+// to make an empty array
+ let items = [];
+ //an array of strings
+ let friends = ["Michel", "Jules", "Mark"];
+ //an array of  numbers
+let num = [1, 2, 3,4, 5];
+
+//using concat() - combine or merge arrays
+//Sample1
+let friends1 = ["Michel", "Jules", "Mark"];
+let friends2 = ["Travis", "TJ"];
+let friends = friends1.concat(friends2);
+//Sample2
+let chooseName = ["France","Jose","Yuno"];
+let chooseNewName = ["Asta","Yami"];
+let completeName = chooseName.concat(chooseNewName);
+
+
+//using includes - look for  a value
+//Sample1
+let friends1 = ["Michel", "Jules", "Mark"];
+let friends2 = ["Travis", "TJ"];
+let friends = friends1.concat(friends2);
+friends.includes("TJ");
+//Sample2
+let chooseName = ["France","Jose","Yuno"];
+let chooseNewName = ["Asta","Yami"];
+let completeName = chooseName.concat(chooseNewName);
+completeName.includes("Noelle");
+
+//using indexOf - just like string indexOf
+ //Sample1
+let friends1 = ["Michel", "Jules", "Mark"];
+let friends2 = ["Travis", "TJ"];
+let friends = friends1.concat(friends2);
+friends.indexOf("TJ");
+ //Sample2
+let fruits = ["Apple","Orange","Mango"];
+fruits[4] = "Watermelon"
+console.log(fruits[2]);
+
+//using reverse - reverse an array
+ //Sample1
+let friends1 = ["Michel", "Jules", "Mark"];
+let friends2 = ["Travis", "TJ"];
+let friends = friends1.concat(friends2);
+friends.reverse();
+ //Sample2
+let veges = ["Okra","Sitaw","Labanos","Mustasa"];
+console.log(veges.reverse());
+
+//using slice - copies a portion on an array, slice(start,end)
+ //Sample1
+let friends = ["Michel", "Jules", "Mark", "TJ","Travis"];
+friends.slice(1);// index of 1 to the end
+friends.slice(1, 3);
+//Sample2
+let anime = ["Haikyuu","Naruto","BlackClover","Gintama"];
+console.log(anime.slice(2,3));
+
+
+//using splice - remove/replaces elements , array.splice(index, how manyToDelete, item1, itemX)
+ //Sample1
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+nums.splice(1, 0, 2);// starting index , how many to delete, what to insert
+ //Sample2
+ let fruits = ["Banana", "Orange", "Apple", "Mango"];
+  fruits.splice(2, 0, "Lemon", "Kiwi");// ['Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango']
+//Sample3
+let fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+fruits.splice(2, 2); //["Banana","Orange","Kiwi"]
+//Sample4
+let myName = ["Francis","Jules","Kiko"];
+myName.splice(2,2,"Celeste","Espartero");
+console.log(myName);
+
+//using sort - sorts an array
+ //Sample1
+let friends = ["Michel", "Jules", "Mark", "TJ","Travis"];
+friends.sort();
+//Sample2
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+
+ 
+//Using push - add to end
+//Sample1
+let section = ["Hero","Villain"];
+section.push("Antagonist");
+console.log(section); // ['Hero', 'Villain', 'Antagonist']
+//Sample2
+let message = ["Bye","Hello","Whatsapp"];
+message.push("Welcome");
+console.log(message); //['Bye', 'Hello', 'Whatsapp', 'Welcome']
+
+//Using pop - remove to an end
+  //Sample1
+let section = ["Hero","Villain"];
+section.push("Antagonist");
+console.log(section); // ['Hero', 'Villain', 'Antagonist']
+section.pop();
+console.log(section); // ['Hero', 'Villain'] 
+ //Sample2
+ let message = ["Bye","Hello","Whatsapp"];
+message.push("Welcome");
+console.log(message); //['Bye', 'Hello', 'Whatsapp', 'Welcome']
+section.pop();
+console.log(message);//['Bye', 'Hello', 'Whatsapp']
+
+
+//Using unshift - add to start
+//Sample1
+let section = ["Hero","Villain"];
+section.unshift("Antagonist");
+console.log(section); // ['Antagonist','Hero', 'Villain']
+
+//Using shift - remove from start
+//Sample1 
+let section =  ['Antagonist','Hero', 'Villain']
+section.shift();
+console.log(section); //['Hero', 'Villain']
+
+
+//Object with array
+//Sample1
+const person = {
+  firstName: "Francis Jules",
+  lastName: "Espartero",
+  age: 20,
+  isMale: True,
+  hashTags:  ["#goaldigger", "#scientist" , "#webdeveloper" , "#softwareengineer"]
+} ;
+person["firstName"];//by using brackets
+person.firstName; //by using dot
+// to update 
+person.age= 18;
+person["age"] = 18;
+//to add
+person.city ="Iloilo City";
+person["city"] = "Iloilo City";
+
+//Sample
+const info = {
+  name: "Francis Espartero",
+  age: 20,
+  gender: "Male",
+  finalGrade: 90,
+  isStudent : true
+}
+info.name; //Francis Jules
+info.age; //20
+info.gender //Male
+info.finalGrade // 90
+info.isStudent // true
+//update
+info.name = "Jules Celeste";
+info.age = 25;
+info.gender = "Female";
+info.finalGrade = 95;
+info.isStudent = false;
+
+
+//nesting arrays and objects
+const blogComments = [
+{
+    username: "Hotdog",
+    likes: 200,
+    comment: "That is awesome"
+},
+
+{
+  username: "FranCodeLess",
+  likes: 1000,
+  comment: "You are awesome!"
+}
+];
+
+//Multi Dimensional Arrays and Nested Array arr[row][col]
+const airplaneSeats = [
+  ['Ruth', 'Anthony','Steven'],
+  ['Amelia','Pedro','Maya'],
+  ['Xavier','Juan','Shoto'],
+  ['Luke','Null','Daniel'],
+  ['Rin','Khang','Julius']
+];
+airplaneSeats[3][1] = "Hugo";
+airplaneSeats[1][2] //Maya
+airplaneSeats[3][1] //Null
+
+//Another Sample
+let buddy = ["France","Jules","Zeldris"];
+buddy[0];//to get the value at the index 0
+buddy.length;//to get the length of an array
+buddy[3];//undefined
+buddy[3] = "Travix";
+
+
+//Nested Loops
+//Sample1
+for (let i = 1; i <= 10; i++){
+  console.log(`i is : ${i}`);
+  for( let j = 1; j <= 4; j++){
+    console.log(`j is : ${j}`);
+  }
+}
+//Sample2
+for (let x = 5; x <= 100; z++){
+  console.log(`x is : ${x}`); //5,10,15,20,25,30,35,40,45,50......
+     for(let z = 10; z <= 100 ; z++){
+       console.log(`z  is : ${z}`); //10,20,30,40,50,60,70,80,90,100
+     }
+}
+
+
+//Nested Loops with Array
+const seatPlan = [
+  ["Student1","Student2","student3"],
+  ["Student4","Student5","student6"],
+  ["Student7","Student8","student9"],
+]
+
+for (let i = 0; i < seatPlan.length; i++){
+  const row = seatPlan[i];
+  console.log(`ROW ${i + 1}`);
+   for(let j = 0; j <= row.length; j++){
+     console.log(row[j]);
+   }
+}
+
+//Another Sample
+let age = 20;
+if (age >= 19){ 
+  alert("Im older 19 years old");
+}
+else{
+   parseInt(prompt("Enter your age: "));
+}
+
+</script>
+
+  </html> 
+
+ 
